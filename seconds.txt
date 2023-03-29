@@ -1,0 +1,21 @@
+package HW;
+
+import java.util.Random;
+
+public class Seconds {
+    public static void main(String[] args) {
+
+        Seconds seconds = new Seconds();
+        Random random = new Random();
+        int n = random.nextInt(0, 28800);
+        System.out.println("Time left in seconds: " + n);
+
+        int h = (int) (seconds.convertHours(n));
+        System.out.println("Time left in hours: " + h);
+
+    }
+    public double convertHours(double n) {
+        double w = n / 3600;
+        return w;
+    }
+}
